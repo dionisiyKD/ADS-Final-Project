@@ -5,12 +5,10 @@
 QTextStream & operator>> (QTextStream&fin, MyList::node* elem) {
     QString garbage = fin.readLine();
     elem->author = fin.readLine();
-
     elem->name = fin.readLine();
     elem->genre = fin.readLine();
     elem->publishing_house = fin.readLine();
     elem->publication_year = fin.readLine();
-
     fin >> elem->number_of_pages;
     fin >> elem->number_of_copies;
     fin >> elem->number_of_copies_for_readers;

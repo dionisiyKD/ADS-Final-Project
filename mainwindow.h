@@ -7,8 +7,7 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class mainwindow; }
 QT_END_NAMESPACE
 
-class mainwindow : public QMainWindow
-{
+class mainwindow : public QMainWindow {
     Q_OBJECT
 
 public:
@@ -17,6 +16,9 @@ public:
 
 private slots:
     void on_HeapSortButton_clicked();
+    void on_HashTableButton_clicked();
+
+    void on_BTreeButton_clicked();
 
 private:
     Ui::mainwindow *ui;

@@ -8,12 +8,11 @@
 
 #include "list.h"
 
-namespace Ui {
-class HeapSort;
-}
+namespace Ui { class HeapSort; }
 
 class HeapSort : public QDialog {
     Q_OBJECT
+
 public:
     explicit HeapSort(QWidget *parent = nullptr);
     ~HeapSort();
@@ -23,22 +22,17 @@ private slots:
     void on_Input_From_File_clicked();
     void on_SortButton_clicked();
     void on_ClearButton_clicked();
-
+    void on_DeleteButton_clicked();
+    void on_SolveButton_clicked();
+    void on_RefreshButton_clicked();
 
     void onBookChanged(MyList::node* book);
-
-    void on_DeleteButton_clicked();
-
-    void on_SolveButton_clicked();
-
-    void on_RefreshButton_clicked();
 
 private:
     Ui::HeapSort *ui;
 
     MyList::list arr;
     QString input_file_name;
-
 
     void heapify(MyList::list& arr, int n, int i);
     void heapSort(MyList::list& arr);
