@@ -206,7 +206,6 @@ void hashtable::on_SearchButton_clicked() {
     window->show();
 }
 
-
 void hashtable::onHumanChanged(HT_item* new_human){
     HT_item tmp;
     tmp.set_name(new_human->get_name());

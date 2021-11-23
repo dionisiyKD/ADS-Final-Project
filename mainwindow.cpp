@@ -5,35 +5,23 @@
 #include "HashTable/hashtable.h"
 #include "BTree/btree.h"
 
-mainwindow::mainwindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::mainwindow)
-{
+mainwindow::mainwindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::mainwindow) {
     ui->setupUi(this);
 }
-
-mainwindow::~mainwindow()
-{
+mainwindow::~mainwindow() {
     delete ui;
 }
 
-
-void mainwindow::on_HeapSortButton_clicked()
-{
+void mainwindow::on_HeapSortButton_clicked() {
     HeapSort *HeapSortWindow = new HeapSort;
     HeapSortWindow->show();
 }
-
-
-void mainwindow::on_HashTableButton_clicked()
-{
+void mainwindow::on_HashTableButton_clicked() {
     hashtable *HashTableWindow = new hashtable;
     HashTableWindow->show();
 }
-
-
-void mainwindow::on_BTreeButton_clicked()
-{
-
+void mainwindow::on_BTreeButton_clicked() {
+    btree *BTreeWindow = new btree;
+    BTreeWindow->show();
 }
 

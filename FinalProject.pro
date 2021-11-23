@@ -10,6 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     BTree/btree.cpp \
+    BTree/btree_add.cpp \
     HashTable/hashtable.cpp \
     HashTable/hashtable_add.cpp \
     HashTable/hashtable_search.cpp \
@@ -21,6 +22,7 @@ SOURCES += \
 
 HEADERS += \
     BTree/btree.h \
+    BTree/btree_add.h \
     HashTable/hashtable.h \
     HashTable/hashtable_add.h \
     HashTable/hashtable_search.h \
@@ -31,6 +33,7 @@ HEADERS += \
 
 FORMS += \
     BTree/btree.ui \
+    BTree/btree_add.ui \
     HashTable/hashtable.ui \
     HashTable/hashtable_add.ui \
     HashTable/hashtable_search.ui \
