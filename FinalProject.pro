@@ -11,34 +11,40 @@ CONFIG += c++11
 SOURCES += \
     BTree/btree.cpp \
     BTree/btree_add.cpp \
+    GreedyAlgorithm/greedyalg.cpp \
     HashTable/hashtable.cpp \
     HashTable/hashtable_add.cpp \
     HashTable/hashtable_search.cpp \
     HeapSort/heapsort.cpp \
     HeapSort/heapsort_add.cpp \
     HeapSort/list.cpp \
+    Huffman/huffman.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     BTree/btree.h \
     BTree/btree_add.h \
+    GreedyAlgorithm/greedyalg.h \
     HashTable/hashtable.h \
     HashTable/hashtable_add.h \
     HashTable/hashtable_search.h \
     HeapSort/heapsort.h \
     HeapSort/heapsort_add.h \
     HeapSort/list.h \
+    Huffman/huffman.h \
     mainwindow.h
 
 FORMS += \
     BTree/btree.ui \
     BTree/btree_add.ui \
+    GreedyAlgorithm/greedyalg.ui \
     HashTable/hashtable.ui \
     HashTable/hashtable_add.ui \
     HashTable/hashtable_search.ui \
     HeapSort/heapsort.ui \
     HeapSort/heapsort_add.ui \
+    Huffman/huffman.ui \
     mainwindow.ui
 
 # Default rules for deployment.

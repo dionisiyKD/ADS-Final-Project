@@ -20,6 +20,10 @@ private slots:
 
     void on_BTreeButton_clicked();
 
+    void on_GreedyAlgButton_clicked();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::mainwindow *ui;
 };
