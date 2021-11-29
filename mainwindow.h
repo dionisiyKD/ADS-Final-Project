@@ -17,12 +17,11 @@ public:
 private slots:
     void on_HeapSortButton_clicked();
     void on_HashTableButton_clicked();
-
     void on_BTreeButton_clicked();
-
     void on_GreedyAlgButton_clicked();
+    void on_HuffmanButton_clicked();
 
-    void on_pushButton_clicked();
+    void on_DPButton_clicked();
 
 private:
     Ui::mainwindow *ui;

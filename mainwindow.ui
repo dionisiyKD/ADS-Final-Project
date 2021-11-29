@@ -6,78 +6,67 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>223</width>
-    <height>312</height>
+    <width>183</width>
+    <height>412</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>mainwindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="BTreeButton">
+   <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>59</x>
-      <y>100</y>
-      <width>111</width>
-      <height>21</height>
+      <x>10</x>
+      <y>10</y>
+      <width>160</width>
+      <height>158</height>
      </rect>
     </property>
-    <property name="text">
-     <string>B-Tree</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="HashTableButton">
-    <property name="geometry">
-     <rect>
-      <x>59</x>
-      <y>70</y>
-      <width>111</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>HashTable</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="HeapSortButton">
-    <property name="geometry">
-     <rect>
-      <x>59</x>
-      <y>40</y>
-      <width>111</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>HeapSort</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="GreedyAlgButton">
-    <property name="geometry">
-     <rect>
-      <x>59</x>
-      <y>130</y>
-      <width>111</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>GreedyAlgorithm</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>160</y>
-      <width>111</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Huffman</string>
-    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="HeapSortButton">
+       <property name="text">
+        <string>HeapSort</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="GreedyAlgButton">
+       <property name="text">
+        <string>GreedyAlgorithm</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BTreeButton">
+       <property name="text">
+        <string>B-Tree</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="HashTableButton">
+       <property name="text">
+        <string>HashTable</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="HuffmanButton">
+       <property name="text">
+        <string>Huffman</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="DPButton">
+       <property name="text">
+        <string>DP</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -85,7 +74,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>223</width>
+     <width>183</width>
      <height>20</height>
     </rect>
    </property>

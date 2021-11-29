@@ -77,26 +77,13 @@ void Huffman::compress(QString text) {
 QString Huffman::decompress(QByteArray byte_array) {
     QString text;
     huff_node* p = root;
-    huff_node* tmp_node;
     int count = 0; unsigned char byte;
     byte = byte_array[0];
     byte_array.remove(0,1);
     do {
         bool b;
         b = byte & (1 << (7 - count));
-        if (b){
-            qCritical() << "tqt";
-            qCritical() << root->data;
-            tmp_node = p->right;
-            qCritical() << tmp_node->data;
-            p = tmp_node;
-        }
-        else {
-            qCritical() << root->data;
-            tmp_node = p->left;
-            qCritical() << tmp_node->data;
-            p = tmp_node;
-        }
+        if (b) p = p->right; else p = p->left;
         if (p->left == NULL && p->right == NULL) {
             text.append(p->data);
             p = root;
@@ -153,7 +140,6 @@ void huffman::on_CompressButton_clicked() {
         }
     }
 
-
     QFile file_output(output_name);
     if(!file_output.exists()){
         qCritical() << "File not found";
@@ -191,7 +177,6 @@ void huffman::on_DecompressButton_clicked() {
     QByteArray byte_array = file_input.readAll();
     Huffman huff(table, root);
     QString text(" ");
-    print_chars_codes(table);
     text = huff.decompress(byte_array);
     file_output.write(text.toUtf8());
     file_input.close();

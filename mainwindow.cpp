@@ -6,6 +6,7 @@
 #include "BTree/btree.h"
 #include "GreedyAlgorithm/greedyalg.h"
 #include "Huffman/huffman.h"
+#include "DynamicProgramming/dynamicprogramming.h"
 
 mainwindow::mainwindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::mainwindow) {
     ui->setupUi(this);
@@ -30,8 +31,12 @@ void mainwindow::on_GreedyAlgButton_clicked() {
     greedyalg *GreedyAlgWindow = new greedyalg;
     GreedyAlgWindow->show();
 }
-void mainwindow::on_pushButton_clicked() {
+void mainwindow::on_HuffmanButton_clicked() {
     huffman *HuffmanWindow = new huffman;
     HuffmanWindow->show();
+}
+void mainwindow::on_DPButton_clicked() {
+    dynamicprogramming *DPWindow = new dynamicprogramming;
+    DPWindow->show();
 }
 
