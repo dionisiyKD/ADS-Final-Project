@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>huffman</class>
  <widget class="QDialog" name="huffman">
@@ -5,13 +6,107 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>477</width>
+    <height>160</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>456</width>
+     <height>138</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="CompressLabel">
+        <property name="text">
+         <string>Compress</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="InputComLabel">
+        <property name="text">
+         <string>Enter an input text file name in this directory</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="InComEdit"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="OutputComLabel">
+        <property name="text">
+         <string>Enter an output text file name in this directory</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="OutComEdit"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="CompressButton">
+        <property name="text">
+         <string>Compress</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="DecompressLabel">
+        <property name="text">
+         <string>Decompress</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="InputDecomLabel">
+        <property name="text">
+         <string>Enter an input text file name in this directory</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="InDecomEdit"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="OutDecomLabel">
+        <property name="text">
+         <string>Enter an output text file name in this directory</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="OutDecomEdit"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="DecompressButton">
+        <property name="text">
+         <string>Decompress</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
  </widget>
  <resources/>
  <connections/>

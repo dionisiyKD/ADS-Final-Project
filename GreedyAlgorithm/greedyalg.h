@@ -8,9 +8,7 @@
 #include <fstream>
 #include <sstream>
 
-#include <map>
-#include <list>
-#include <vector>
+#include <QVector>
 
 namespace Ui { class greedyalg; }
 
