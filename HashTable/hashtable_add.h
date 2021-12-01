@@ -3,7 +3,6 @@
 #define HASHTABLE_ADD_H
 
 #include <QDialog>
-
 #include "HashTable/hashtable.h"
 
 namespace Ui { class hashtable_add; }

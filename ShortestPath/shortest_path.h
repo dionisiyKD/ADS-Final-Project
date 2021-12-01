@@ -3,31 +3,11 @@
 #define SHORTEST_PATH_H
 
 #include <QDialog>
-#include <QVector>
 #include <QString>
 #include <QFile>
+#include <QVector>
 
 namespace Ui { class shortest_path; }
-
-class shortest_path : public QDialog {
-    Q_OBJECT
-
-public:
-    explicit shortest_path(QWidget *parent = nullptr);
-    ~shortest_path();
-
-private slots:
-    void on_Task1Button_clicked();
-
-    void on_Task2Button_clicked();
-
-    void on_Task3Button_clicked();
-
-private:
-    Ui::shortest_path *ui;
-};
-
-
 
 class Graph_dij_floyd {
     int V;
@@ -42,7 +22,6 @@ public:
 
     void convert();
 };
-
 
 struct Edge {
     int u;  // Start vertex
@@ -60,17 +39,20 @@ public:
     void discount(QVector<QPair<int, int>> discounts);
 };
 
+class shortest_path : public QDialog {
+    Q_OBJECT
 
+public:
+    explicit shortest_path(QWidget *parent = nullptr);
+    ~shortest_path();
 
+private slots:
+    void on_Task1Button_clicked();
+    void on_Task2Button_clicked();
+    void on_Task3Button_clicked();
 
-
-
-
-
-
-
-
-
-
+private:
+    Ui::shortest_path *ui;
+};
 
 #endif // SHORTEST_PATH_H

@@ -8,24 +8,10 @@ huffman::~huffman() {
     delete ui;
 }
 
-void print_chars_codes(QMap<QChar, QVector<bool> > table) {
-    QMap<QChar, QVector<bool> >::iterator i;
-    for (i = table.begin(); i != table.end(); i++) {
-        QVector<bool> a = i.value();
-        int size = a.size();
-        QString b;
-        for (int i = 0; i < size; i++)
-            if(a[i])
-                b.push_back('1');
-            else
-                b.push_back('0');
-        qCritical() << " [" << i.key() << "]: " + b;
-    }
-}
-
 bool compare(const huff_node *l, const huff_node *r){
     return l->freq < r->freq;
 }
+
 void Huffman::BuildTable(huff_node* root) {
     if (root->left != NULL) {
         code.push_back(0);
@@ -181,15 +167,3 @@ void huffman::on_DecompressButton_clicked() {
     file_output.write(text.toUtf8());
     file_input.close();
 }
-
-
-
-
-
-
-
-
-
-
-
-

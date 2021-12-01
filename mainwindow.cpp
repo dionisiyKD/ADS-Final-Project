@@ -49,4 +49,3 @@ void mainwindow::on_pushButton_clicked() {
     shortest_path *SPWindow = new shortest_path;
     SPWindow->show();
 }
-

@@ -25,4 +25,3 @@ void hashtable_search::on_buttonBox_accepted() {
 void hashtable_search::on_buttonBox_rejected() {
     close();
 }
-

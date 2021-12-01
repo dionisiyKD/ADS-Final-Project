@@ -93,15 +93,16 @@ btree::btree(QWidget *parent) : QDialog(parent), ui(new Ui::btree) {
 btree::~btree() {
     delete ui;
 }
+
 void btree::set_t(int _t) { t = _t; }
 BTreeNodeData btree::search(int k) { return root->search(k); }
+
 void btree::insert(BTreeNodeData k) {
     if (root == NULL) {
         root = new BTreeNode(t, true);
         root->keys[0] = k;
         root->n = 1;
     }
-
     else {
         if (root->n == 2 * t - 1) {
             BTreeNode* s = new BTreeNode(t, false);
@@ -172,9 +173,6 @@ void btree::on_Input_From_File_clicked() {
     }
     file.close();
 
-}
-void btree::on_RefreshButton_clicked() {
-    //populateTable();
 }
 void btree::on_Add_Button_clicked() {
     btree_add *window = new btree_add;

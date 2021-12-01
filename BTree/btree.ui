@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>710</x>
@@ -67,7 +67,7 @@
       </property>
       <property name="maximumSize">
        <size>
-        <width>115</width>
+        <width>300</width>
         <height>16777215</height>
        </size>
       </property>

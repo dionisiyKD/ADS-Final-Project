@@ -238,6 +238,3 @@ void dfs_bfs::on_Task3Button_clicked() {
         ui->Task3AnswearTextEdit->append(g.result_path[i] + " ---> ");
     ui->Task3AnswearTextEdit->append(g.result_path[g.result_path.size() - 1]);
 }
-//    for (int j = 0; j < V; j++) {
-//        qCritical() << distance_BFS[BFS_list[j]];
-//    } qCritical() << ' ';

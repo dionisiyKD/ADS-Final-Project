@@ -1,3 +1,4 @@
+#pragma once
 #ifndef HASHTABLE_H
 #define HASHTABLE_H
 
@@ -5,7 +6,6 @@
 #include <QMessageBox>
 #include <QString>
 #include <QFile>
-
 
 namespace Ui { class hashtable; }
 
@@ -34,9 +34,6 @@ public:
 
     HT_item* get_next() { return next; }
     void set_next(HT_item* n) { next = n; }
-
-    void input_item();
-    void output_item();
 
     int HashFunc(int TABLE_SIZE);
     int HashKey();

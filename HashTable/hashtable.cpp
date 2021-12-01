@@ -231,23 +231,3 @@ void hashtable::onHumanSearching(HT_item* new_human){
         QMessageBox::about(this, "Yay", "The role of this employee: " + result);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

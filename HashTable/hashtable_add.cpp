@@ -27,4 +27,3 @@ void hashtable_add::on_buttonBox_accepted() {
 void hashtable_add::on_buttonBox_rejected() {
     close();
 }
-

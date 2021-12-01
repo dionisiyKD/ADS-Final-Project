@@ -1,3 +1,4 @@
+#pragma once
 #ifndef BTREE_H
 #define BTREE_H
 
@@ -8,7 +9,6 @@
 #include <QTextStream>
 
 namespace Ui { class btree; }
-
 
 struct BTreeNodeData {
     int ident_number;
@@ -30,8 +30,6 @@ public:
 
     void insertNonFull(BTreeNodeData k);
     void splitChild(int i, BTreeNode* y);
-    void traverse();
-
     BTreeNodeData search(int k);
 
     friend class btree;
@@ -51,12 +49,10 @@ public:
 
 private slots:
     void on_Input_From_File_clicked();
-    void on_RefreshButton_clicked();
     void on_Add_Button_clicked();
+    void on_SearchButton_clicked();
 
     void onHumanChanged(BTreeNodeData* new_human);
-
-    void on_SearchButton_clicked();
 
 private:
     Ui::btree *ui;
@@ -65,8 +61,6 @@ private:
     BTreeNode* root;
     int t;
 
-    void populateTable();
-    void populateTable_recur(BTreeNode* entry);
     void addToTable(BTreeNodeData new_node);
 };
 

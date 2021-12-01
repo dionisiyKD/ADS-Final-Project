@@ -12,7 +12,7 @@ void Graph_dij_floyd::input_graph(QVector<QVector<double>> g, int v) {
     V = v;
     graph = g;
 }
-int Graph_dij_floyd::minDistance(double* shortest_dist, bool* incl_path) {
+int  Graph_dij_floyd::minDistance(double* shortest_dist, bool* incl_path) {
     int min = INT_MAX, min_index = 0;
     for (int i = 0; i < V; i++)
         if (incl_path[i] == false && shortest_dist[i] <= min) {
@@ -72,7 +72,6 @@ void Graph_dij_floyd::convert() {
 //                graph[i][j] /= speed;
 }
 
-
 void GraphBellman::inputGraph(QVector<Edge> edg, int v, int e) {
     edge = edg;
     V = v;
@@ -104,8 +103,6 @@ void GraphBellman::discount(QVector<QPair<int, int>> discounts) {
             if (edge[i].u == discounts[j].first)
                 edge[i].w -= discounts[j].second;
 }
-
-
 
 void shortest_path::on_Task1Button_clicked() {
     QString file_name;
@@ -245,43 +242,3 @@ void shortest_path::on_Task3Button_clicked() {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
