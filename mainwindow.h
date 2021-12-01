@@ -24,6 +24,8 @@ private slots:
     void on_DFS_BFSButton_clicked();
     void on_pushButton_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::mainwindow *ui;
 };
