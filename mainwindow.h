@@ -23,6 +23,8 @@ private slots:
 
     void on_DPButton_clicked();
 
+    void on_DFS_BFSButton_clicked();
+
 private:
     Ui::mainwindow *ui;
 };

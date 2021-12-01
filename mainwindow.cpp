@@ -7,6 +7,7 @@
 #include "GreedyAlgorithm/greedyalg.h"
 #include "Huffman/huffman.h"
 #include "DynamicProgramming/dynamicprogramming.h"
+#include "DFS_BFS/dfs_bfs.h"
 
 mainwindow::mainwindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::mainwindow) {
     ui->setupUi(this);
@@ -38,5 +39,9 @@ void mainwindow::on_HuffmanButton_clicked() {
 void mainwindow::on_DPButton_clicked() {
     dynamicprogramming *DPWindow = new dynamicprogramming;
     DPWindow->show();
+}
+void mainwindow::on_DFS_BFSButton_clicked() {
+    dfs_bfs *DFS_BFSWindow = new dfs_bfs;
+    DFS_BFSWindow->show();
 }
 

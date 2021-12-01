@@ -11,6 +11,7 @@ CONFIG += c++11
 SOURCES += \
     BTree/btree.cpp \
     BTree/btree_add.cpp \
+    DFS_BFS/dfs_bfs.cpp \
     DynamicProgramming/dynamicprogramming.cpp \
     GreedyAlgorithm/greedyalg.cpp \
     HashTable/hashtable.cpp \
@@ -26,6 +27,7 @@ SOURCES += \
 HEADERS += \
     BTree/btree.h \
     BTree/btree_add.h \
+    DFS_BFS/dfs_bfs.h \
     DynamicProgramming/dynamicprogramming.h \
     GreedyAlgorithm/greedyalg.h \
     HashTable/hashtable.h \
@@ -40,6 +42,7 @@ HEADERS += \
 FORMS += \
     BTree/btree.ui \
     BTree/btree_add.ui \
+    DFS_BFS/dfs_bfs.ui \
     DynamicProgramming/dynamicprogramming.ui \
     GreedyAlgorithm/greedyalg.ui \
     HashTable/hashtable.ui \
