@@ -3,13 +3,14 @@
 #define DYNAMICPROGRAMMING_H
 
 #include <QDialog>
-#include <QRegularExpression>
 #include <QFile>
-#include <QString>
-#include <vector>
-#include <QMap>
-#include <cmath>
 #include <QtAlgorithms>
+#include <QRegularExpression>
+#include <QString>
+#include <cmath>
+
+#include <QMap>
+#include <QVector>
 
 namespace Ui { class dynamicprogramming; }
 
@@ -25,7 +26,6 @@ public:
     QVector<int> get_max_subsequence();
     void solve();
 };
-
 class Town {
     QMap<QString, int> results;
 
@@ -35,7 +35,6 @@ public:
     Town(QVector<QVector<QString>> matr, int a): n(a), matrix(matr){}
     QMap<QString, int> solve();
 };
-
 
 class dynamicprogramming : public QDialog {
     Q_OBJECT
@@ -51,7 +50,6 @@ private slots:
 
 private:
     Ui::dynamicprogramming *ui;
-
     QVector<QVector<QString>> matr;
 };
 

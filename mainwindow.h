@@ -20,10 +20,9 @@ private slots:
     void on_BTreeButton_clicked();
     void on_GreedyAlgButton_clicked();
     void on_HuffmanButton_clicked();
-
     void on_DPButton_clicked();
-
     void on_DFS_BFSButton_clicked();
+    void on_pushButton_clicked();
 
 private:
     Ui::mainwindow *ui;

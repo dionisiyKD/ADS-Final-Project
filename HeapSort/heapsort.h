@@ -5,7 +5,6 @@
 
 #include <QFileDialog>
 #include <QTextStream>
-
 #include "list.h"
 
 namespace Ui { class HeapSort; }

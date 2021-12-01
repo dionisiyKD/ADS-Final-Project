@@ -1,8 +1,10 @@
 #pragma once
 #ifndef HEAPSORT_ADD_H
 #define HEAPSORT_ADD_H
+
 #include "list.h"
 #include <QDialog>
+#include <QString>
 
 namespace Ui { class heapsort_add; }
 

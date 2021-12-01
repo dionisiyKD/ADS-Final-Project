@@ -3,13 +3,14 @@
 #define DFS_BFS_H
 
 #include <QDialog>
+#include <QFile>
 #include <QString>
+#include <QRegularExpression>
+
 #include <QList>
 #include <QStack>
 #include <QQueue>
-#include <QFile>
-#include <QRegularExpression>
-#include <vector>
+#include <QVector>
 
 namespace Ui { class dfs_bfs; }
 
@@ -30,7 +31,6 @@ class Graph {
     bool* visited;
 public:
     Graph();
-    void set_input_name(QString str);
     void enter_graph(QList<int>* adj_list, int n);
 
     void BFS(int s);
@@ -38,12 +38,8 @@ public:
     void DFS_stack(int s);
     void DFS_with_time(int s);
 
-    void output_BFS();
-    void output_DFS();
-
     friend class dfs_bfs;
 };
-
 class Task_3_Graph {
     QList<int>* adj;         // Adjency list
     QVector<QString> words;  // Array of words
@@ -56,24 +52,9 @@ public:
     void enter_graph(QList<int>* adj_list, QVector<QString> words_vec, int n);
 
     bool DFS_search_word(int s, QString str);
-    void output_words();
-    void output_result_path();
 
     friend class dfs_bfs;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 class dfs_bfs : public QDialog {
     Q_OBJECT
@@ -84,9 +65,7 @@ public:
 
 private slots:
     void on_Task1Button_clicked();
-
     void on_Task2Button_clicked();
-
     void on_Task3Button_clicked();
 
 private:

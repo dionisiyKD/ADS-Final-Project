@@ -3,7 +3,6 @@
 #define BTREE_ADD_H
 
 #include <QDialog>
-
 #include "BTree/btree.h"
 
 namespace Ui { class btree_add; }
@@ -14,7 +13,6 @@ class btree_add : public QDialog {
 public:
     explicit btree_add(QWidget *parent = nullptr);
     ~btree_add();
-
     void set_human(BTreeNodeData* human);
 
 signals:
@@ -26,7 +24,6 @@ private slots:
 
 private:
     Ui::btree_add *ui;
-
     BTreeNodeData *new_human;
 };
 

@@ -21,6 +21,7 @@ SOURCES += \
     HeapSort/heapsort_add.cpp \
     HeapSort/list.cpp \
     Huffman/huffman.cpp \
+    ShortestPath/shortest_path.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -37,6 +38,7 @@ HEADERS += \
     HeapSort/heapsort_add.h \
     HeapSort/list.h \
     Huffman/huffman.h \
+    ShortestPath/shortest_path.h \
     mainwindow.h
 
 FORMS += \
@@ -51,6 +53,7 @@ FORMS += \
     HeapSort/heapsort.ui \
     HeapSort/heapsort_add.ui \
     Huffman/huffman.ui \
+    ShortestPath/shortest_path.ui \
     mainwindow.ui
 
 # Default rules for deployment.

@@ -1,6 +1,5 @@
 #include "heapsort_add.h"
 #include "ui_heapsort_add.h"
-#include <string>
 
 heapsort_add::heapsort_add(QWidget *parent) : QDialog(parent), ui(new Ui::heapsort_add) {
     ui->setupUi(this);

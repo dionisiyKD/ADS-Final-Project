@@ -158,11 +158,3 @@ void HeapSort::onBookChanged(MyList::node* book){
     arr.add_tail(book);
     addToTable(book);
 }
-
-
-
-
-
-
-
-

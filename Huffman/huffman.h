@@ -3,13 +3,13 @@
 #define HUFFMAN_H
 
 #include <QDialog>
+#include <QFile>
+#include <QtAlgorithms>
 #include <QString>
+
 #include <QVector>
 #include <QMap>
 #include <QList>
-#include <QString>
-#include <QFile>
-#include <QtAlgorithms>
 
 namespace Ui { class huffman; }
 
@@ -22,8 +22,6 @@ struct huff_node {
         freq = l->freq + r->freq;
     };
 };
-
-
 class Huffman {
     QString str;
     huff_node* root;
@@ -46,8 +44,6 @@ public:
     huff_node* get_root();
 };
 
-
-
 class huffman : public QDialog {
     Q_OBJECT
 
@@ -57,7 +53,6 @@ public:
 
 private slots:
     void on_CompressButton_clicked();
-
     void on_DecompressButton_clicked();
 
 private:
@@ -66,7 +61,5 @@ private:
     QMap<QChar, QVector<bool> > table;
     huff_node* root;
 };
-
-
 
 #endif // HUFFMAN_H

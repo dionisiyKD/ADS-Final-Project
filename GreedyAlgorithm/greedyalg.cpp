@@ -8,8 +8,6 @@ greedyalg::~greedyalg() {
     delete ui;
 }
 
-water::water() {}
-water::~water() {}
 void water::bubble_sort() {
     int tmp;
     for (int i = 0; i < n; i++)
@@ -20,6 +18,11 @@ void water::bubble_sort() {
                 bucket[j + 1] = tmp;
             }
         }
+}
+void water::set_variables(int a, int b, QVector<int> array) {
+    barrel = a;
+    n = b;
+    bucket = array;
 }
 QVector<int>  water::solve() {
     QVector<int> result;
@@ -45,14 +48,6 @@ QVector<int>  water::solve() {
 //        }
 //    }
     return result;
-//    for (int i = 0; i < result.size(); i++)
-//        cout << result[i] << " ";
-//    cout << endl;
-}
-void water::set_variables(int a, int b, QVector<int> array) {
-    barrel = a;
-    n = b;
-    bucket = array;
 }
 
 void greedyalg::on_StartButton_clicked() {
@@ -70,5 +65,6 @@ void greedyalg::on_StartButton_clicked() {
     QString result_string("Result: ");
     for (int i = 0; i<result.size(); i++)
         result_string.append(" " + QString::number(result[i]));
+    ui->AnswearLabel->clear();
     ui->AnswearLabel->setText(result_string);
 }

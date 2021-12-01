@@ -1,6 +1,7 @@
 #pragma once
 #ifndef LIST_H
 #define LIST_H
+
 #include <QString>
 #include <QTextStream>
 #include <iostream>
