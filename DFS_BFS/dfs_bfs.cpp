@@ -241,6 +241,3 @@ void dfs_bfs::on_Task3Button_clicked() {
 //    for (int j = 0; j < V; j++) {
 //        qCritical() << distance_BFS[BFS_list[j]];
 //    } qCritical() << ' ';
-
-
-

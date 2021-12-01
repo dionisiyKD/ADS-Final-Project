@@ -8,6 +8,7 @@
 #include "Huffman/huffman.h"
 #include "DynamicProgramming/dynamicprogramming.h"
 #include "DFS_BFS/dfs_bfs.h"
+#include "ShortestPath/shortest_path.h"
 
 mainwindow::mainwindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::mainwindow) {
     ui->setupUi(this);
@@ -43,5 +44,9 @@ void mainwindow::on_DPButton_clicked() {
 void mainwindow::on_DFS_BFSButton_clicked() {
     dfs_bfs *DFS_BFSWindow = new dfs_bfs;
     DFS_BFSWindow->show();
+}
+void mainwindow::on_pushButton_clicked() {
+    shortest_path *SPWindow = new shortest_path;
+    SPWindow->show();
 }
 

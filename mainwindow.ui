@@ -20,7 +20,7 @@
       <x>10</x>
       <y>10</y>
       <width>160</width>
-      <height>185</height>
+      <height>212</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -70,6 +70,13 @@
       <widget class="QPushButton" name="DFS_BFSButton">
        <property name="text">
         <string>DFS BFS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Dijkstr Bellman Warshall</string>
        </property>
       </widget>
      </item>

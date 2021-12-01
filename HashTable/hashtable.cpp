@@ -74,11 +74,11 @@ void hashtable::remove(HT_item value) {
 }
 QString hashtable::search_role(HT_item value) {
     int key = value.HashFunc(TABLE_SIZE);
-    HT_item* prev = NULL;
+    //HT_item* prev = NULL;
     HT_item* entry = table[key];
 
     while (entry != NULL && !(*entry == value)) {
-        prev = entry;
+        //prev = entry;
         entry = entry->get_next();
     }
 
