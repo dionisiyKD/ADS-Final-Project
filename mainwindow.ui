@@ -32,13 +32,6 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="GreedyAlgButton">
-       <property name="text">
-        <string>GreedyAlgorithm</string>
-       </property>
-      </widget>
-     </item>
-     <item>
       <widget class="QPushButton" name="BTreeButton">
        <property name="text">
         <string>B-Tree</string>
@@ -49,6 +42,13 @@
       <widget class="QPushButton" name="HashTableButton">
        <property name="text">
         <string>HashTable</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="GreedyAlgButton">
+       <property name="text">
+        <string>GreedyAlgorithm</string>
        </property>
       </widget>
      </item>

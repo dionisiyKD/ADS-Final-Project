@@ -75,7 +75,6 @@ BTreeNodeData BTreeNode::search(int k)
         return keys[i];
 
     if (leaf == true) {
-        //cout << " Этой машины нет в дереве" << endl;
         BTreeNodeData garbage;
         return garbage;
     }
